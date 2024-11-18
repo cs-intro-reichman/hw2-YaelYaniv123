@@ -8,13 +8,9 @@ public class CalcPi {
 		for (int i = 0; i <= numTerms - 1; i++) {
 			calc = calc + (double) 1 / counter;
 			counter = counter + 2;
-			System.out.println(calc);
-			System.out.println(counter);
 			if (i + 1 <= numTerms) {
 				calc = calc - (double) 1 / counter;
-				System.out.println(calc); // erase
 				counter = counter + 2;
-				System.out.println(counter); // erase
 				i++;
 			}
 		}
